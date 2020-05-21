@@ -38,7 +38,7 @@ module.exports = {
     },
   },
 
-  production: {
+  testing: {
     client: "pg",
     connection: connectionString || {
       host: "127.0.0.1",

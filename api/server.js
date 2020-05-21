@@ -24,7 +24,7 @@ server.get("/pokemon/:id", (req, res) => {
 
 server.post("/pokemon", (req, res) => {
   Pokemon.add(req.body).then((pk) => {
-    res.status(200).json(pk);
+    res.status(201).json(pk);
   });
 });
 
