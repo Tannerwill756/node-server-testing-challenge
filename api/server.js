@@ -30,7 +30,7 @@ server.post("/pokemon", (req, res) => {
 
 server.delete("/pokemon/:id", (req, res) => {
   Pokemon.remove(req.params.id).then((del) => {
-    res.json(del);
+    res.status(200).json(del);
   });
 });
 module.exports = server;
